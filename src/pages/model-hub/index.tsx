@@ -83,6 +83,13 @@ export default function ModelHubPage() {
 
             {/* Top chips and action */}
             {/* Mosaic banner */}
+            <div className="flex flex-wrap items-center gap-3 justify-end  p-10">
+                <GradientButton href="/model-hub/live-virtual-audition" label="Host Live Virtual Audition" colors="bg-gradient-to-r from-red-600 to-red-400 text-white hover:opacity-90" width="w-auto" />
+                <GradientButton href="/model-hub/cast-calling-form" label="Host Calling Calls" colors="bg-gradient-to-r from-red-600 to-red-400 text-white hover:opacity-90" width="w-auto" />
+                <GradientButton href="/model-hub/cast-applicants" label="View Casting Applicants" colors="bg-gradient-to-r from-red-600 to-red-400 text-white hover:opacity-90" width="w-auto" />
+                <GradientButton href="/model-hub/live-virtual-applicants" label="View Live Virtual Application" colors="bg-gradient-to-r from-red-600 to-red-400 text-white hover:opacity-90" width="w-auto" />
+            </div>
+
             <MosaicBanner src="/images/mosaicbanner.png" alt="Mosaic banner" className="px-4 md:px-8 mt-6 shadow-none" />
             <div className="w-full flex justify-center">
                 <GradientButton label="Elite Model Circle" variant="horizontal" href="/elite-model-circle" />

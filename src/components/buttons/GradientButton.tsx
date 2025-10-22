@@ -12,6 +12,7 @@ interface GradientButtonProps {
   className?: string;
   colors?: string; // Custom gradient override
   disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 export default function GradientButton({
@@ -23,6 +24,7 @@ export default function GradientButton({
   className = "",
   colors,
   disabled = false,
+  type = "button",
 }: GradientButtonProps) {
   const baseClasses = `
     block px-6 py-2 text-center font-semibold rounded-full
@@ -51,8 +53,9 @@ export default function GradientButton({
   }
 
   return (
-    <button onClick={onClick} disabled={disabled} className={combinedClasses}>
+    <button type={type} onClick={onClick} disabled={disabled} className={combinedClasses}>
       {label}
     </button>
   );
 }
+

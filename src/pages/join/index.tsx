@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../../components/ui/Button";
 import BrandDetails from "../../components/join/BrandDetails";
 import InfluencerDetails from "../../components/join/InfluencerDetails";
+import GradientButton from "../../components/buttons/GradientButton";
 
 export default function JoinPage() {
   const [role, setRole] = useState<"brand" | "influencer">("brand");
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    alert("Form submitted");
+    
     // handle submit later
   };
 
@@ -65,13 +67,12 @@ export default function JoinPage() {
           {/* Submit */}
           <div className="pt-2">
             <div className="flex justify-center">
-              <Button
-                type="submit"
+              <GradientButton
                 label="Submit"
-                width={200}
-                height={44}
-                bgColor="#2f4a8a"
-                className="text-white"
+                width="w-[200px] h-[44px]"
+                colors="bg-gradient-to-r from-[#2f4a8a] to-[#4c6cb3] text-white hover:opacity-90"
+                type="submit"
+                href="/affiliate-page"
               />
             </div>
           </div>

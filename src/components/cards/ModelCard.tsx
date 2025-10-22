@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Twitter, Globe } from "lucide-react";
+import { Twitter, Globe ,BadgeCheck} from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 import GradientButton from "../buttons/GradientButton";
 
@@ -37,9 +37,7 @@ export default function ModelCard({ data, onHire }: Props) {
         <div className="flex items-center gap-2">
           <h3 className="font-semibold text-gray-900">{name}</h3>
           {/* verified badge */}
-          <svg className="text-blue-500" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M9 16.2l-3.5-3.5L4 14.2l5 5 12-12-1.5-1.5z" />
-          </svg>
+          <BadgeCheck className="text-blue-500" size={16} aria-label="Verified" />
         </div>
         <div className="text-sm text-indigo-600 mt-1">Ramp walk Model</div>
 
@@ -53,7 +51,7 @@ export default function ModelCard({ data, onHire }: Props) {
           <div className="grid grid-cols-4 gap-4 text-sm mt-1">
             {order.slice(0, 4).map((k) => (
               <div key={`val-${k}`} className="text-gray-900">{statMap[k] ?? "-"}</div>
-            ))}
+            ))}   
           </div>
           <div className="grid grid-cols-4 gap-4 text-sm text-gray-600 mt-3">
             {order.slice(4, 7).map((k) => (

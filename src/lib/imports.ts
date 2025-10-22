@@ -13,6 +13,7 @@ export { default as SiteFooter } from "../components/SiteFooter";
 export { default as AffiliateBanner } from "../components/sections/AffiliateBanner";
 export { default as MosaicBanner } from "../components/sections/MosaicBanner";
 export { default as CastingRequests } from "../components/sections/CastingRequests";
+export { default as CastingGrid } from "../components/sections/CastingGrid";
 export { default as TrendingModelsSection } from "../components/sections/TrendingModels";
 export { default as AffiliateHeader } from "../components/layout/AffiliateHeader";
 
@@ -58,6 +59,7 @@ export { default as SearchInput } from "../components/misc/SearchInput";
 export { default as SearchSortBar } from "../components/misc/SearchSortBar";
 export { default as StatsGrid } from "../components/misc/StatsGrid";
 export { default as TableRowContent } from "../components/misc/TableRowContent";
+export { default as CreateGigForm } from "../components/forms/CreateGigForm";
 
 // Popups
 export { default as CreateCampaignPopup } from "../components/popup/CreateCampaignPopup";
