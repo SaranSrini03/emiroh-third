@@ -30,32 +30,7 @@ export default function CastingGrid({ title = "All Casting Applications", items,
     <section className="px-4 md:px-8 mt-10">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl text-black font-semibold">{title}</h2>
-        <div className="flex gap-3">
-          <select
-            aria-label="Type filter"
-            className="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 bg-white"
-            value={typeFilter}
-            onChange={(e) => setTypeFilter(e.target.value)}
-          >
-            <option value="">Type</option>
-            <option value="paid">Paid</option>
-            <option value="unpaid">Unpaid</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="any">Any</option>
-            <option value="remote">Remote</option>
-          </select>
-          <select
-            aria-label="Date filter"
-            className="border border-gray-300 rounded-md px-3 py-2 text-sm text-gray-700 bg-white"
-            value={dateFilter}
-            onChange={(e) => setDateFilter(e.target.value)}
-          >
-            <option value="">Date</option>
-            <option value="newest">Newest</option>
-            <option value="oldest">Oldest</option>
-          </select>
-        </div>
+
       </div>
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

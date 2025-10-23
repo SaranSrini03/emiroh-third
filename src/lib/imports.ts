@@ -90,5 +90,5 @@ export { MdOutlineAttachMoney } from "react-icons/md";
 export { AiOutlineFileText } from "react-icons/ai";
 export { BsClipboardData } from "react-icons/bs";
 export { FiMenu, FiX } from "react-icons/fi";
-export { Home, FileText, BarChart3, CreditCard, Menu, X, Bell, Mail, UserCircle, Search, Twitter, Linkedin, Globe, Heart, ArrowUpRight } from "lucide-react";
+export { Home, FileText, BarChart3, CreditCard, Menu, X, Bell, Mail, UserCircle, Search, Twitter, Linkedin, Globe, Heart, ArrowUpRight,Filter } from "lucide-react";
 export { FaUsers, FaBoxOpen, FaMoneyBillWave, FaCode, FaInstagram } from "react-icons/fa";
