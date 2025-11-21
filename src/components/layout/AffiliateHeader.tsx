@@ -21,7 +21,7 @@ export default function AffiliateHeader({
           <GradientButton label="Smart Matching" href="/smart-match" />
         )}
         {showDashboard && (
-          <GradientButton label="Dashboard" href="/launch-product" />
+          <GradientButton label="Dashboard" href="/hub/dashboard" />
         )}
       </div>
     </div>

@@ -78,6 +78,7 @@ export default function CampaignCard({ campaign }: { campaign: Campaign }) {
             width="w-auto"
             colors="bg-blue-900 hover:opacity-90"
             className="px-6 py-2 text-sm"
+            href="/launch-product"
             onClick={() => console.log(`Interested in campaign ${campaign.id}`)}
           />
         </div>

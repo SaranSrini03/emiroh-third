@@ -1,22 +1,23 @@
         "use client";
-        import React, { useMemo, useState } from "react";
-        import { SecondaryNavbar, GradientButton } from "@/lib/imports";
-        import Input from "@/components/forms/Input";
-        import Field from "@/components/forms/Field";
-        import Dropzone from "@/components/forms/Dropzone";
-        import { AiOutlineFileText } from "react-icons/ai";
+import React, { useMemo, useState } from "react";
+import { SecondaryNavbar, GradientButton } from "@/lib/imports";
+import AppliedByCard from "@/components/cards/AppliedByCard";
+import Input from "@/components/forms/Input";
+import Field from "@/components/forms/Field";
+import Dropzone from "@/components/forms/Dropzone";
+import { AiOutlineFileText } from "react-icons/ai";
 
-        export default function ViewModelPostPage() {
-            const [height, setHeight] = useState("");
-            const [weight, setWeight] = useState("");
-            const [bustChest, setBustChest] = useState("");
-            const [waist, setWaist] = useState("");
-            const [hips, setHips] = useState("");
-            const [eyeColor, setEyeColor] = useState("");
-            const [dressSize, setDressSize] = useState("");
-            const [shoeSize, setShoeSize] = useState("");
-            const [hairLength, setHairLength] = useState("");
-            const [portfolioLink, setPortfolioLink] = useState("");
+export default function ViewModelPostPage() {
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
+    const [bustChest, setBustChest] = useState("");
+    const [waist, setWaist] = useState("");
+    const [hips, setHips] = useState("");
+    const [eyeColor, setEyeColor] = useState("");
+    const [dressSize, setDressSize] = useState("");
+    const [shoeSize, setShoeSize] = useState("");
+    const [hairLength, setHairLength] = useState("");
+    const [portfolioLink, setPortfolioLink] = useState("");
 
             const uploadHint = useMemo(() => "PNG, JPG, MP4 up to 10MB", []);
 
@@ -136,22 +137,12 @@
                             </div>
 
                             <div className="lg:col-span-3">
-                                <div className="sticky top-4 rounded-2xl border border-gray-200 bg-white p-4">
-                                    <div className="text-sm font-semibold text-gray-900">Applied By</div>
-                                    <div className="mt-4 flex items-center gap-3">
-                                        <div className="h-10 w-10 rounded-full overflow-hidden bg-gray-200" />
-                                        <div>
-                                            <div className="text-sm font-medium text-gray-900">Jane Cooper</div>
-                                            <div className="text-xs text-gray-500">@janecooper</div>
-                                        </div>
-                                    </div>
-                                    <div className="mt-4 text-xs text-gray-600 leading-5">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-                                    </div>
-                                    <div className="mt-4">
-                                        <GradientButton label="Launch Product" width="w-full h-[40px]" colors="bg-gray-900 text-white hover:opacity-90" />
-                                    </div>
-                                </div>
+                                <AppliedByCard 
+                                    name="Jane Cooper"
+                                    username="janecooper"
+                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."
+                                    buttonText="Launch Product"
+                                />
                             </div>
                         </div>
                     </div>

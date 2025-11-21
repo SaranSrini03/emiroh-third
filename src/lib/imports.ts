@@ -2,15 +2,7 @@
 // Import from this file to keep import lines short across the app.
 
 export { default as Navbar } from "../components/layout/SiteNavbar";
-export { default as Hero } from "../components/Hero";
-export { default as Features } from "../components/Features";
-export { default as Features2 } from "../components/Features2";
-export { default as Partners } from "../components/Partners";
-export { default as SocialGallery } from "../components/SocialGallery";
-export { default as CTABanner } from "../components/CTABanner";
-export { default as ContactForm } from "../components/ContactForm";
-export { default as SiteFooter } from "../components/SiteFooter";
-export { default as AffiliateBanner } from "../components/sections/AffiliateBanner";
+
 export { default as MosaicBanner } from "../components/sections/MosaicBanner";
 export { default as CastingRequests } from "../components/sections/CastingRequests";
 export { default as CastingGrid } from "../components/sections/CastingGrid";
@@ -18,10 +10,8 @@ export { default as TrendingModelsSection } from "../components/sections/Trendin
 export { default as AffiliateHeader } from "../components/layout/AffiliateHeader";
 
 // UI
-export { default as Button } from "../components/ui/Button";
 export { default as FilterButton } from "../components/buttons/FilterButton";
 export { default as GradientButton } from "../components/buttons/GradientButton";
-export { default as Checkbox } from "../components/ui/Checkbox";
 
 // Cards
 export { default as Card } from "../components/cards/Card";
@@ -38,9 +28,7 @@ export { default as DonutPie } from "../components/charts/DonutPie";
 export { default as MultiLineChart } from "../components/charts/MultiLineChart";
 export { default as SimpleLineChartPayments } from "../components/charts/SimpleLineChartPayments";
 
-// Join flow
-export { default as BrandDetails } from "../components/join/BrandDetails";
-export { default as InfluencerDetails } from "../components/join/InfluencerDetails";
+
 
 // Layout
 export { default as SecondaryNavbar } from "../components/layout/SecondaryNavbar";
@@ -69,7 +57,6 @@ export { default as AnimatedTable } from "../components/tables/AnimatedTable";
 export { default as PayoutsTable } from "../components/tables/PayoutsTable";
 export { default as PerformanceTable } from "../components/tables/PerformanceTable";
 export { default as TableHeader } from "../components/tables/TableHeader";
-export { default as TableCell } from "../components/tables/TableCell";
 
 // Direct access to specific/legacy layout components
 export { default as SiteNavbar } from "../components/layout/SiteNavbar";
@@ -85,10 +72,107 @@ export { usePathname } from "next/navigation";
 export { default as Link } from "next/link";
 export { default as Image } from "next/image";
 export { motion, type Variants } from "framer-motion";
-export { Table, TableContainer, TableHead, Paper, TableRow } from "../components/tables/TablePrimitives";
+
+
+
+export type { ReactNode, ChangeEvent, FormEvent } from "react";
+
+export { useRouter } from "next/router";
+export { Html, Head, Main, NextScript } from "next/document";
+
+// ─── Next.js Types ─────────────────────────────────────
+export type { AppProps } from "next/app";
+export type { StaticImport } from "next/dist/shared/lib/get-img-props";
+
+
+// ─── Chart.js / React-ChartJS-2 ──────────────────────────
+export {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler,
+} from "chart.js";
+export { Line } from "react-chartjs-2";
+
+
+// ─── MUI Components ────────────────────────────────────
+export {
+  Table,
+  TableRow,
+  TableContainer,
+  TableHead,
+  Paper,
+  TableCell,
+  Button,
+  Checkbox,
+} from "@mui/material";
+
+// ─── Lucide Icons ──────────────────────────────────────
+export {
+  Edit2,
+  Trash2,
+  Twitter,
+  Linkedin,
+  Globe,
+  Search,
+  Bell,
+  Mail,
+  UserCircle,
+  Menu,
+  X,
+  BarChart3,
+  Filter,
+  ChevronDown,
+  ChevronRight,
+  Home,
+  FileText,
+  CreditCard,
+  ArrowDown,
+  ArrowUp,
+  ArrowUpRight,
+  Heart,
+  MoreVertical,
+  Info,
+  SlidersHorizontal,
+  Upload,
+  Send,
+} from "lucide-react";
+
+// ─── React Icons ───────────────────────────────────────
+export { FaInstagram, FaUsers, FaBoxOpen, FaMoneyBillWave, FaCode } from "react-icons/fa";
 export { MdOutlineAttachMoney } from "react-icons/md";
 export { AiOutlineFileText } from "react-icons/ai";
+export { AiOutlineClose } from "react-icons/ai";
 export { BsClipboardData } from "react-icons/bs";
+export { CheckCircledIcon } from "@radix-ui/react-icons";
 export { FiMenu, FiX } from "react-icons/fi";
-export { Home, FileText, BarChart3, CreditCard, Menu, X, Bell, Mail, UserCircle, Search, Twitter, Linkedin, Globe, Heart, ArrowUpRight,Filter } from "lucide-react";
-export { FaUsers, FaBoxOpen, FaMoneyBillWave, FaCode, FaInstagram } from "react-icons/fa";
+// ─── Custom Components (via components barrel) ──────────
+
+export * from "@/components";
+
+// ─── Data ──────────────────────────────────────────────
+export { default as data } from "@/data/influencer";
+
+// ─── Utils / Libraries ─────────────────────────────────
+export { default as toast } from "react-hot-toast";
+export { Toaster } from "react-hot-toast";
+
+// ─── latest ──────────────────────────────────────
+export { default as Hero } from "../components/Hero";
+export { default as AffiliateBanner } from "../components/AffiliateBanner";
+export { default as Features } from "../components/Features";
+export { default as Features2 } from "../components/Features2"; 
+export { default as Partners } from "../components/Partners";
+export { default as SocialGallery } from "../components/SocialGallery";
+export { default as CTABanner } from "../components/CTABanner";
+export { default as ContactForm } from "../components/ContactForm";
+export { default as SiteFooter } from "../components/SiteFooter";
+
+// ─── Join Flow Components ─────────────────────────
+export { default as BrandDetails } from "../components/join/BrandDetails";
+export { default as InfluencerDetails } from "../components/join/InfluencerDetails";

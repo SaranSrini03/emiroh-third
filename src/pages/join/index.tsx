@@ -12,7 +12,7 @@ export default function JoinPage() {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push(role === "influencer" ? "/affiliate-product" : "/model-view");
+    router.push(role === "influencer" ? "/affiliate-page" : "/model-view");
   };
 
   const isBrand = role === "brand";
